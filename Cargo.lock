@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+name = "memory_management"
+version = "0.1.0"
+
+[[package]]
 name = "rust_basic"
 version = "0.1.0"
