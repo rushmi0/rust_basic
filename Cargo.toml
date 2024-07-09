@@ -1,4 +1,4 @@
-workspace = { members = ["src/memory_management"] }
+workspace = { members = [ "src/datatype","src/memory_debug"] }
 [package]
 name = "rust_basic"
 version = "0.1.0"
@@ -8,11 +8,13 @@ edition = "2021"
 # เพิ่มส่วนนี้เพื่อระบุไฟล์ที่ต้องการรัน #
 [[bin]]
 name = "stack_example_1"
-path = "src/memory_management/src/stack/stack_ex_1.rs"
+path = "src/memory_debug/src/stack_ex_1.rs"
 
 [[bin]]
-name = "stack_example_2"
-path = "src/memory_management/src/stack/stack_ex_2.rs"
+name = "main"
+path = "src/datatype/src/main.rs"
+
+
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
