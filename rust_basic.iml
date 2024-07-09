@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/datatype/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/memory_debug/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/newfunction_basic/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/function_basic/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

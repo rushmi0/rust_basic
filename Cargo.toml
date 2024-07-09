@@ -1,22 +1,29 @@
-workspace = { members = [ "src/datatype","src/memory_debug"] }
+# กำหนดว่า workspace นี้มีสมาชิกอะไรบ้าง โดยแต่ละสมาชิกคือไดเรกทอรีที่มีโปรเจ็กต์ย่อยของ Rust
+workspace = { members = [ "src/datatype", "src/function_basic", "src/memory_debug"] }
+
+# ข้อมูลทั่วไปของโปรเจ็กต์นี้
 [package]
-name = "rust_basic"
-version = "0.1.0"
-edition = "2021"
+name = "rust_basic"  # ชื่อของ package นี้
+version = "0.1.0"  # เวอร์ชันของ package นี้
+edition = "2021"  # ระบุ edition ของ Rust ที่ใช้งาน
 
-
-# เพิ่มส่วนนี้เพื่อระบุไฟล์ที่ต้องการรัน #
+# เพิ่มส่วนนี้เพื่อระบุไฟล์ที่ต้องการรัน
+# กำหนดให้ binary target แต่ละอันมีชื่อที่ไม่ซ้ำกัน
 [[bin]]
-name = "stack_example_1"
-path = "src/memory_debug/src/stack_ex_1.rs"
+name = "main_1"   # ชื่อ binary target ตัวแรก ต้องไม่ซ้ำกับชื่ออื่น
+path = "src/memory_debug/src/main.rs"  # path ไปยังไฟล์ main.rs ของ binary target ตัวแรก
 
 [[bin]]
-name = "main"
-path = "src/datatype/src/main.rs"
+name = "main_2"
+path = "src/datatype/src/main.rs" 
 
+# ข้อควรระวัง:
+# - ชื่อ binary target (name) ต้องไม่ซ้ำกัน เพื่อป้องกันปัญหาการ compile
+# - ตรวจสอบให้แน่ใจว่า path ที่ระบุถูกต้องและไฟล์นั้นมีอยู่จริง
+# - การตั้งค่า workspace ควรตรวจสอบว่าทุก path ของสมาชิกถูกต้อง
 
+# ข้อมูลเพิ่มเติมเกี่ยวกับ keys และการกำหนดค่า สามารถดูได้ที่:
+# https://doc.rust-lang.org/cargo/reference/manifest.html
 
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+# กำหนด dependencies ที่ต้องการใช้ในโปรเจค
 [dependencies]

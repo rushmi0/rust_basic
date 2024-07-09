@@ -5,7 +5,6 @@ fn type_of<T>(_: T) -> &'static str {
 }
 
 fn main() {
-
     let name = "rushmi0";
     println!("{}", name);
 
@@ -17,5 +16,4 @@ fn main() {
     let c: char = 'c';
     println!("x = {} z = {} c = {}", x, z, c);
     println!("Type x = {}", type_of(&x))
-
 }
