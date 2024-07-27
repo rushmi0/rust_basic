@@ -11,7 +11,19 @@ name = "function_basic"
 version = "0.1.0"
 
 [[package]]
+name = "heap"
+version = "0.1.0"
+
+[[package]]
+name = "keyword_self"
+version = "0.1.0"
+
+[[package]]
 name = "memory_debug"
+version = "0.1.0"
+
+[[package]]
+name = "refer_owner_borrow"
 version = "0.1.0"
 
 [[package]]

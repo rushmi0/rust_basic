@@ -1,21 +1,34 @@
 # กำหนดว่า workspace นี้มีสมาชิกอะไรบ้าง โดยแต่ละสมาชิกคือไดเรกทอรีที่มีโปรเจ็กต์ย่อยของ Rust
-workspace = { members = [ "src/datatype", "src/function_basic", "src/memory_debug"] }
+workspace = { members = [ "src/datatype", "src/function_basic", "src/heap", "src/keyword_self", "src/memory_debug", "src/refer_owner_borrow"] }
 
 # ข้อมูลทั่วไปของโปรเจ็กต์นี้
 [package]
-name = "rust_basic"  # ชื่อของ package นี้
-version = "0.1.0"  # เวอร์ชันของ package นี้
-edition = "2021"  # ระบุ edition ของ Rust ที่ใช้งาน
+name = "rust_basic"
+version = "0.1.0"
+edition = "2021"
 
 # เพิ่มส่วนนี้เพื่อระบุไฟล์ที่ต้องการรัน
 # กำหนดให้ binary target แต่ละอันมีชื่อที่ไม่ซ้ำกัน
 [[bin]]
-name = "main_1"   # ชื่อ binary target ตัวแรก ต้องไม่ซ้ำกับชื่ออื่น
+name = "memory_debug"   # ชื่อ binary target ตัวแรก ต้องไม่ซ้ำกับชื่ออื่น
 path = "src/memory_debug/src/main.rs"  # path ไปยังไฟล์ main.rs ของ binary target ตัวแรก
 
 [[bin]]
-name = "main_2"
-path = "src/datatype/src/main.rs" 
+name = "datatype"
+path = "src/datatype/src/main.rs"
+
+[[bin]]
+name = "refer_owner_borrow"
+path = "src/refer_owner_borrow/src/main.rs"
+
+[[bin]]
+name = "heap"
+path = "src/heap/src/main.rs"
+
+[[bin]]
+name = "keyword_self"
+path = "src/keyword_self/src/main.rs"
+
 
 # ข้อควรระวัง:
 # - ชื่อ binary target (name) ต้องไม่ซ้ำกัน เพื่อป้องกันปัญหาการ compile

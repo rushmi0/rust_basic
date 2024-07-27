@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/datatype/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/memory_debug/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/function_basic/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/heap/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/refer_owner_borrow/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/keyword_self/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
